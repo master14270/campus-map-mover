@@ -4,13 +4,9 @@ import operator
 import os
 import math
 import random
-import configparser
 
-from get_map import row_num, col_num, POI
+from get_map import row_num, col_num, POI, myConfig
 from get_map import my_world as mw
-
-myConfig = configparser.ConfigParser()
-myConfig.read("settings.ini")
 
 # setting window position.
 x_pos = int(myConfig['Constants']['window_x_position'])

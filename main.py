@@ -4,7 +4,7 @@ Written by Jessie Smith
 
 - be sure to install all of the required modules to make the program run properly.
 - 'main.py' and 'astar_functions.py' should be in the same directory/folder.
-- all the variables discussed below are in 'astar_functions.py', modify them there.
+- variables discussed below are in 'astar_functions.py', you can modify them there, or in the config file.
 - to move the location of the pygame window, modify 'x_pos' and 'y_pos'
 - to change the number of tiles in the map, modify 'x_tiles' and 'y_tiles'
 - to change the start and end points, modify 'begin_point' and 'end_point'

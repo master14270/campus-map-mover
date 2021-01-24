@@ -1,10 +1,15 @@
 import csv
+import configparser
 
-camp_map = []
-datafile = open('FredoniaMap_2D_RGB.csv', 'r')
+# This is the configuration file
+myConfig = configparser.ConfigParser()
+myConfig.read("settings.ini")
 
+# Reading the csv
+datafile = open(myConfig['Constants']['file_to_read'], 'r')
 datareader = csv.reader(datafile, delimiter=',')
 
+camp_map = []
 for row in datareader:
     camp_map.append(row)
 
@@ -18,7 +23,6 @@ camp_map = [l[40:340] for l in camp_map]
 my_world = []
 row_num = len(camp_map)
 col_num = len(camp_map[0])
-
 
 for i in range(row_num):
     row = []
